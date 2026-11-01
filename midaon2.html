@@ -193,7 +193,10 @@ html,body{overflow-x:hidden}
 .meet.big{grid-template-areas:"date body" "gal gal"}
 .meet.big .meet-date{grid-area:date}
 .meet.big .meet-body{grid-area:body}
-.meet.big .gallery{grid-area:gal;margin:18px 0 0}
+.meet.big .gallery-wrap{grid-area:gal;margin:18px 0 0}
+.gallery-label{font-weight:900;font-size:15px;line-height:1.35;color:var(--ink);margin:0 0 10px;
+  display:flex;align-items:center;gap:9px}
+.gallery-label::before{content:"";flex:none;width:22px;height:3px;border-radius:2px;background:var(--pink)}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .shot{margin:0;background:#fff;padding:8px 8px 10px;border-radius:5px;
   box-shadow:0 10px 26px rgba(35,31,32,.14),0 1px 4px rgba(35,31,32,.08);
@@ -428,7 +431,9 @@ footer p + p{margin-top:6px}
               <div class="score"><span class="stars" style="--s:4.5"></span><b>4.5</b> מתוך 5 במשוב</div>
             </div>
 
-            <div class="gallery" role="group" aria-label="תמונות מכנס הרכזים בבני ברק">
+            <div class="gallery-wrap">
+              <p class="gallery-label">הכשרה לרכזי הבוגרים של משרד העבודה · מפגש פיזי</p>
+              <div class="gallery" role="group" aria-label="תמונות מההכשרה לרכזי הבוגרים של משרד העבודה, מפגש פיזי בבני ברק">
                 <figure class="shot">
                   <img src="photos/kenes-hekerut.jpg" alt="רכזים עומדים ומשוחחים בקבוצות במהלך ההיכרות בכנס" width="1400" height="1050" loading="lazy" decoding="async">
                   <figcaption>היכרות: "מי בתחביב שלי"</figcaption>
@@ -453,6 +458,7 @@ footer p + p{margin-top:6px}
                   <img src="photos/kenes-mifgash.jpg" alt="רכזים משוחחים בעמידה בין השולחנות בהפסקת הכנס" width="1400" height="1050" loading="lazy" decoding="async">
                   <figcaption>המפגש הפרונטלי הראשון</figcaption>
                 </figure>
+              </div>
             </div>
           </li>
         </ol>
@@ -689,7 +695,6 @@ footer p + p{margin-top:6px}
 <footer>
   <a href="https://hopa.org.il" target="_blank" rel="noopener" aria-label="הופה"><img src="hopa-logo.png" alt="הופה"></a>
   <p>עמותת הופה, <a href="https://hopa.org.il" target="_blank" rel="noopener" dir="ltr">hopa.org.il</a></p>
-  <p><a href="midaon.html">לגיליון הקודם: סיכום תשפ״ו</a></p>
 </footer>
 
 <canvas id="confetti" aria-hidden="true"></canvas>
