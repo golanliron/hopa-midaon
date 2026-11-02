@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>הופה · ניוזלטר · חודש אוקטובר</title>
 <meta name="description" content="מידעון שותפים של עמותת הופה: שיתופי פעולה חדשים, סיפורי בוגרים ועבודה בשטח.">
-<meta property="og:title" content="פותחים דרכים לבוגרים שלנו · ניוזלטר הופה, חודש אוקטובר">
+<meta property="og:title" content="פותחים דרכים חדשות · ניוזלטר הופה, חודש אוקטובר">
 <meta property="og:description" content="שיתופי פעולה חדשים, סיפורי בוגרים ועבודה בשטח.">
-<meta property="og:image" content="https://golanliron.github.io/hopa-midaon/photos/midaon2-dror-neve-midbar.jpg">
+<meta property="og:image" content="https://midaon.hopa.org.il/photos/midaon2-dror-neve-midbar.jpg">
 <meta name="theme-color" content="#FFF200">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +89,10 @@ html,body{overflow-x:hidden}
 .ch-icon{font-size:30px;line-height:1;margin-bottom:10px}
 .chapter h2{font-weight:900;font-size:clamp(34px,6.4vw,64px);line-height:1;letter-spacing:-.035em}
 .chapter .sub{font-size:clamp(17px,2vw,20px);color:var(--ink-2);margin-top:12px;max-width:40ch}
-.ch-body{margin-top:34px;display:grid;gap:30px}
+.ch-body{margin-top:34px;display:grid;gap:30px;min-width:0}
+.ch-body > *{min-width:0}
+.meet{min-width:0}
+.meet-body{min-width:0}
 
 @media (min-width:900px){
   .chapter{display:grid;grid-template-columns:1fr 140px 1fr;padding-inline-start:0}
@@ -210,7 +213,7 @@ html,body{overflow-x:hidden}
 .shot img{border-radius:2px;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--blush)}
 .shot figcaption{font-weight:600;font-size:13px;color:var(--ink-2);padding-top:7px;line-height:1.45}
 @media (max-width:820px){.gallery{grid-template-columns:repeat(2,1fr);gap:10px}}
-@media (max-width:520px){.gallery{margin-inline-end:-4px}}
+@media (max-width:520px){.meet.big .gallery-wrap{margin-inline:0}}
 @media (max-width:460px){.shot figcaption{font-size:12.5px}}
 @media (max-width:520px){.meet{grid-template-columns:1fr;gap:6px}.meet-date{text-align:start;display:flex;gap:8px;align-items:baseline}.meet-date b{display:inline;margin:0}}
 
@@ -371,10 +374,9 @@ footer p + p{margin-top:6px}
   </div>
   <div class="hero-body">
     <div class="issue-tag">ניוזלטר · חודש אוקטובר</div>
-    <h1 class="title" aria-label="פותחים דרכים חדשות לבוגרים שלנו">
+    <h1 class="title" aria-label="פותחים דרכים חדשות">
       <span class="line" aria-hidden="true"><span class="w" style="--i:0">פותחים</span></span>
       <span class="line" aria-hidden="true"><span class="w pink" style="--i:1">דרכים</span> <span class="w pink" style="--i:2">חדשות</span></span>
-      <span class="line" aria-hidden="true"><span class="w" style="--i:3">לבוגרים</span> <span class="w" style="--i:4">שלנו</span></span>
     </h1>
     <p class="lede">שלושה מפגשים עם יותר מ-70 רכזים, בוגרים שפונים אלינו, שותפויות חדשות להמשך לימודים ולמכינות, ומודל הרמזור שכבר עובד בשטח.</p>
   </div>
